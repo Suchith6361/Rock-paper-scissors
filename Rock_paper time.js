@@ -102,8 +102,8 @@ else if(event.key==='s'){
    
    
            document.querySelector('.js_move').innerHTML=`  You
-            <img src="images/${playerMove}-emoji.png" alt="" class="move_icon">
-            <img src="images/${computerMove}-emoji.png" alt="" class="move_icon">
+            <img src="${playerMove}-emoji.png" alt="" class="move_icon">
+            <img src="${computerMove}-emoji.png" alt="" class="move_icon">
             Computer`;
    UpdatedScore();
         }
