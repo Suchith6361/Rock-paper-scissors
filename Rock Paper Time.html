@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Project</title>
+<style>
+body{
+    background-color: rgb(25, 25 ,25);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+   font-size:30px;
+   font-weight: bold;
+}
+.move_icon{
+    height: 50px;
+}
+.move_button{
+    background-color: transparent;
+    border: 3px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+.result{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.score{
+    margin-top: 50px;
+}
+.reset_button,
+.auto_play{
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+    <p class="title">Rock paper Scissors</p>
+
+
+            <button onclick=" 
+                playGame('Rock');
+                " class="move_button"><img src="images/rock-emoji.png" alt="" class="move_icon"></button>
+
+
+            <button onclick="
+                playGame('Paper');
+                " class="move_button"><img src="images/paper-emoji.png" alt="" class="move_icon" ></button>
+
+
+            <button onclick="
+                playGame('Scissor');
+                " class="move_button js_rock_button"><img src="images/scissor-emoji.png" alt="" class="move_icon"></button>
+
+                <p class="js_result result"></p>
+                <p class="js_move">    </p>
+                <p class="js_score score"></p>
+
+                <button onclick="
+                score.Wins=0;
+                score.losses=0;
+                score.tie=0;
+                UpdatedScore();
+                 " class="reset_button">Reset Score</button>
+
+<button class="auto_play"
+onclick="autoPlay();">Auto Play</button>
+
+    <script src="Rock_paper time.js">
+
+        
+    </script>
+</body>
+</html>
